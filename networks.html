@@ -1,0 +1,101 @@
+ <section id="network" class="page-section">
+            <div class="section-header">
+                <h2>Computer Networks (Mind Map & Modules)</h2>
+                <p>Interactive branching architecture & Grade XII Network Infrastructure topics</p>
+            </div>
+
+            <!-- Branching Visual Tree Diagram -->
+            <div class="network-tree-container">
+                <div class="tree-root">
+                    <div class="main-node" onclick="openSubPage('network-overview')">
+                        <i class="fa-solid fa-network-wired"></i> Computer Networks Hub
+                    </div>
+
+                    <div class="tree-branches-wrapper">
+                        <!-- Branch 1: Addressing & Subnetting -->
+                        <div class="branch-column">
+                            <div class="branch-header"><i class="fa-solid fa-list-ol"></i> IP Subnetting</div>
+                            <div class="subnode-list">
+                                <div class="subnode-card" onclick="openSubPage('ip-subnetting')">
+                                    <h5>IPv4 Addressing & CIDR</h5>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="subnode-card" onclick="openSubPage('ip-subnetting')">
+                                    <h5>Subnet Mask Calculation</h5>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Branch 2: Network Topologies -->
+                        <div class="branch-column">
+                            <div class="branch-header"><i class="fa-solid fa-diagram-project"></i> Topologies</div>
+                            <div class="subnode-list">
+                                <div class="subnode-card" onclick="openSubPage('packet-tracer')">
+                                    <h5>Star & Mesh Architecture</h5>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="subnode-card" onclick="openSubPage('packet-tracer')">
+                                    <h5>Packet Tracer Simulation</h5>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Branch 3: Protocols & Security -->
+                        <div class="branch-column">
+                            <div class="branch-header"><i class="fa-solid fa-shield-halved"></i> Protocols</div>
+                            <div class="subnode-list">
+                                <div class="subnode-card" onclick="openSubPage('protocol-analysis')">
+                                    <h5>TCP/IP & OSI Models</h5>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="subnode-card" onclick="openSubPage('protocol-analysis')">
+                                    <h5>HTTP/HTTPS Handshake</h5>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Module Cards -->
+            <div class="module-grid">
+                <div class="module-card">
+                    <div>
+                        <span class="badge-status">Interactive Page</span>
+                        <i class="fa-solid fa-network-wired card-icon"></i>
+                        <h3>IP Addressing & Subnetting</h3>
+                        <p>Designing IPv4 Class C s, calculating subnet masks, broadcast addresses, and host ranges.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openSubPage('ip-subnetting')">
+                        <i class="fa-solid fa-arrow-right"></i> Open Sub-Page & Calculator
+                    </button>
+                </div>
+
+                <div class="module-card">
+                    <div>
+                        <span class="badge-status">Simulator Ready</span>
+                        <i class="fa-solid fa-diagram-project card-icon"></i>
+                        <h3>Packet Tracer Topology</h3>
+                        <p>Simulating Star and Mesh network topologies utilizing Switches, Routers, and client PCs with ping tests.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openSubPage('packet-tracer')">
+                        <i class="fa-solid fa-arrow-right"></i> Open Sub-Page & Simulator
+                    </button>
+                </div>
+
+                <div class="module-card">
+                    <div>
+                        <span class="badge-status">Diagram Page</span>
+                        <i class="fa-solid fa-shield-halved card-icon"></i>
+                        <h3>Protocol & Traffic Analysis</h3>
+                        <p>Understanding the 7-Layer OSI model, TCP 3-Way handshake, DNS resolution, and packet inspection.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openSubPage('protocol-analysis')">
+                        <i class="fa-solid fa-arrow-right"></i> Open Sub-Page & Visualizer
+                    </button>
+                </div>
+            </div>
+        </section>

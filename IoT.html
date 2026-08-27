@@ -1,0 +1,49 @@
+<section id="iot" class="page-section">
+            <div class="section-header">
+                <h2>IoT & Microcontrollers</h2>
+                <p>Circuit schematics, C++ Arduino code, and hardware interaction</p>
+            </div>
+
+            <div class="module-grid">
+                <div class="module-card">
+                    <div>
+                        <span class="badge-status">Interactive Lab</span>
+                        <i class="fa-solid fa-temperature-high card-icon"></i>
+                        <h3>DHT11 Sensor & LCD</h3>
+                        <p>Reading ambient temperature & humidity data and rendering readings onto an I2C 16x2 LCD display.</p>
+                        <div class="code-preview">
+#include &lt;DHT.h&gt;
+#define DHTPIN 2
+DHT dht(DHTPIN, DHT11);
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="openSubPage('dht11-sensor')">
+                        <i class="fa-solid fa-arrow-right"></i> Open Sub-Page & Wokwi Demo
+                    </button>
+                </div>
+
+                <div class="module-card">
+                    <div>
+                        <span class="badge-status">Live Control</span>
+                        <i class="fa-solid fa-robot card-icon"></i>
+                        <h3>Servo Motor Actuator</h3>
+                        <p>Controlling precise mechanical rotation angles using Pulse Width Modulation (PWM) signals from Arduino.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openSubPage('servo-motor')">
+                        <i class="fa-solid fa-arrow-right"></i> Open Sub-Page & Servo Controller
+                    </button>
+                </div>
+
+                <div class="module-card">
+                    <div>
+                        <span class="badge-status">Wi-Fi Lab</span>
+                        <i class="fa-solid fa-wifi card-icon"></i>
+                        <h3>ESP8266 Wireless Hub</h3>
+                        <p>Connecting microcontrollers to local Wi-Fi networks for telemetry data publishing and IoT web servers.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="openSubPage('esp8266-wifi')">
+                        <i class="fa-solid fa-arrow-right"></i> Open Sub-Page & Wi-Fi Tester
+                    </button>
+                </div>
+            </div>
+        </section>

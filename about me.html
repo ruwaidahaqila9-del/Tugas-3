@@ -1,0 +1,62 @@
+  <!-- 1. BERANDA (HOME) PAGE -->
+        <section id="beranda" class="page-section active-page">
+            <div class="cute-card">
+                <div class="hero">
+                    <div style="text-align: center;">
+                        <!-- HEART SHAPED PROFILE IMAGE -->
+                        <div class="heart-frame-wrapper">
+                            <div class="heart-frame-outer">
+                                <div class="heart-frame-inner">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500" id="main-profile-img" alt="Foto Aqila Putri" class="profile-img">
+                                </div>
+                            </div>
+                        </div>
+                        <label class="photo-uploader-btn">
+                            📷 Ganti Foto Profil
+                            <input type="file" accept="image/*" onchange="uploadImage(event, 'main-profile-img')" style="display: none;">
+                        </label>
+                    </div>
+
+                    <div>
+                        <span class="hero-badge">✨ Siswa XII IPA Informatika</span>
+                        <h1 class="hero-title">Halo, Saya <span>Aqila Putri</span> 👋</h1>
+                        <p class="hero-desc">
+                            Selamat datang di portofolio digital saya! Saya adalah siswi <strong>SMA Negeri 2 Mojokerto</strong> yang sangat bersemangat mengeksplorasi dunia Rekayasa Perangkat Lunak, Jaringan Komputer, dan IoT (Internet of Things).
+                        </p>
+                        <div class="cta-group">
+                            <button onclick="switchPage('karya')" class="btn btn-primary">🌸 Lihat Proyek Saya</button>
+                            <button onclick="switchPage('kontak')" class="btn btn-secondary">📬 Hubungi Saya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILLS SUMMARY SECTION -->
+            <div class="cute-card">
+                <h2 class="section-title">✨ Ringkasan Keahlian</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">🎨</div>
+                        <h3>HTML & CSS</h3>
+                        <p style="font-size: 0.85rem; color: #7a5c63;">Desain Web Modular & Responsif</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🌐</div>
+                        <h3>Jaringan Dasar</h3>
+                        <p style="font-size: 0.85rem; color: #7a5c63;">Cisco Packet Tracer & IP Addressing</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">🤖</div>
+                        <h3>IoT & Arduino</h3>
+                        <p style="font-size: 0.85rem; color: #7a5c63;">Wokwi Simulator & Sensor C++</p>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">💡</div>
+                        <h3>Problem Solving</h3>
+                        <p style="font-size: 0.85rem; color: #7a5c63;">Berpikir Komputasional & Logika</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
